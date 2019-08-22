@@ -1,0 +1,102 @@
+.advanced-search {
+    width: 100%; 
+    background-color: $color-grey-blue;
+    border-radius: 10rem; 
+    padding: 3rem;
+    
+
+    @media screen and (max-width: $bp-large) {
+        padding: 2rem; 
+        border-radius: 1rem;
+    }
+
+    @media screen and (max-width: $bp-small) {
+        padding: 2rem; 
+        border-radius: 1rem;
+    }
+    
+    &--form { 
+        font-family: $font-primary;
+        font-weight: 500;  
+        display: flex; 
+        align-items: center; 
+        justify-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: $bp-small) {
+            flex-direction: column;
+            
+            align-items: stretch; 
+            
+            justify-content: none;
+            align-content: space-between;
+        }
+
+        & > * { 
+            height: 4rem;
+            
+            &:not(:last-child) { 
+                margin-left: 2rem; 
+            } 
+
+            @media screen and (max-width: $bp-small) {
+                height: auto; 
+                padding: 1rem; 
+
+                &:not(:last-child) { 
+                    margin: 0; 
+                    margin-bottom: 1rem;
+                }  
+            }
+        }
+    }
+    
+    &__label { 
+        font-family: inherit; 
+        font-size: 2rem; 
+        color: white; 
+        font-weight: 500; 
+        line-height: 2;
+        
+        @media screen and (max-width: $bp-small) {
+            line-height: 1;  
+        }
+    }
+    
+    &__field { 
+        font-family: inherit; 
+        flex: 1; 
+        min-width: 25rem;
+
+        border-radius: 5rem; 
+        padding-right: 2rem;
+        padding-left: 2rem; 
+        
+        color: white; 
+        background-color: $color-grey-blue-dark; 
+        border-color: rgba($color: #fff, $alpha: .2);
+    }
+    
+    &__options {        
+        color: white; 
+        font-family: inherit; 
+
+        min-width: 25rem;  
+        
+        -webkit-appearance: none; 
+        -moz-appearance: none; 
+        appearance: none;
+        
+        background-color: $color-grey-blue-dark; 
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij4gICAgICAgICAgICAgICAgPHBhdGggZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwxKSIgZD0iTTE0LjgzIDE2LjQyTDI0IDI1LjU5bDkuMTctOS4xN0wzNiAxOS4yNWwtMTIgMTItMTItMTJ6Ii8+PHBhdGggZD0iTTAtLjc1aDQ4djQ4SDB6IiBmaWxsPSJub25lIi8+ICAgICAgICAgICAgPC9zdmc+');
+        background-position-y: 50%; 
+        background-position-x: 4%; 
+        background-repeat: no-repeat; 
+
+        border-color: rgba($color: #fff, $alpha: .2);
+
+        padding-right: 1rem; 
+        padding-left: 1rem; 
+        border-radius: 5rem;
+    }
+}

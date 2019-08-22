@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Aref+Ruqaa:400,700|Tajawal:400,500&display=swap&subset=arabic');
+
+$color-primary: #2f2fa2; 
+$color-primary-dark: #242582; 
+$color-primary-light: #5f5fc4; 
+
+
+$color-red: #ed3c3c; 
+// $color-grey-dark: #553d67; 
+// $color-grey-light:#99738e; 
+
+$color-grey-blue: #212139; 
+$color-grey-blue-dark: #10101c; 
+
+
+
+$font-display: 'Aref Ruqaa', serif;
+$font-primary:  'Tajawal', sans-serif;
+
+
+$color-secondary: #0a4f6c;
+$color-secondary-dark: #0a2239;
+$color-secondary-light: #129490;
+
+$color-tomato: #ff5a5f;
+$color-grey-dark: #020203;
+// $color-grey-dark: #363537;
+
+
+$bp-largest: 1200px; 
+$bp-large: 1000px; 
+$bp-small: 900px; 
+$bp-smallest: 600px;
+
+*, 
+*::after, 
+*::before { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: inherit;
+    direction: rtl;  
+}
+
+html { 
+    font-size: 62.5%; 
+    box-sizing: border-box;
+    
+    @media screen and (max-width: $bp-large) {
+        font-size: 55%; 
+    }
+}
+
+body { 
+    background-color: $color-grey-dark;
+    font-family: $font-primary; 
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 0 auto; 
+    // padding: 2rem;  
+
+}
+
+

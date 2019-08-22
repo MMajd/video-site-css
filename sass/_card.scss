@@ -1,0 +1,131 @@
+.card { 
+    position: relative;
+    display: block; 
+    
+    min-width: 10rem;
+    overflow: hidden;
+    backface-visibility: hidden; 
+    transition: all .2s ease-in-out; 
+
+
+    &__link { 
+        text-align: center;
+        text-decoration: none; 
+    }
+    
+    &__overlay { 
+        position: absolute; 
+        top: 0; 
+        left: 0;
+        width: 100%; 
+        height: 100%;
+
+        display: flex; 
+        justify-content: flex-end; 
+        align-items: center;
+        flex-direction: column;     
+        background-image: linear-gradient(to top, rgba(#000, .7) 10%, transparent);
+        transition: all 0.2s ease-in-out;
+    }
+    
+    &__content {
+        position: absolute;  
+        left: 0; 
+        top: 0; 
+        width: 100%; 
+        height: 100%; 
+    }
+
+    
+    &__img { 
+        display: block; 
+        width: 100%;
+        height: 100%; 
+    }
+    
+    &__title {
+        display: block; 
+        font-weight: 500; 
+        font-size: 2rem;
+        line-height: 2rem; 
+        color: #ccc;
+        transition: all .2s ease; 
+    }
+    
+    &__description { 
+        margin-top: .5rem;
+        max-height: 0;
+
+        font-size: 1.3rem; 
+        font-weight: 500; 
+        line-height: 2rem; 
+        color: #aaa; 
+
+        overflow: hidden; 
+
+        padding: 0rem 1rem;
+        margin-bottom: .5rem;
+        transform: translateY(120%);
+        transition: all .2s ease;  
+    }
+    
+    &__ribbon { 
+        position: absolute; 
+        display: inline-block; 
+        top: 2rem;
+        left: 0rem; 
+        width: 15rem;
+        text-align: center; 
+
+        transform: rotate(-45deg) translateY(-2.5rem) translateX(-3rem);
+        backface-visibility: hidden; 
+        transition: opacity .2s ease-in-out; 
+
+        &--1 { 
+            background-color: $color-secondary-dark; 
+        }
+        
+        &--2 {             
+            background-color: $color-red; 
+        }
+        
+        &--3 { 
+            background-color: $color-secondary; 
+        }
+        
+        &--4 { 
+            background-color: $color-secondary-dark; 
+        }
+        
+        &--5 { 
+            background-color: $color-secondary-light; 
+        }
+        
+        &--6 { 
+            background-color: $color-primary-light; 
+        }
+
+        &--text { 
+            font-weight: 900; 
+            font-size: 1.6rem;
+            color: white; 
+        }
+    }
+    
+    &:hover &__ribbon { 
+        opacity: 0;  
+    }
+
+    &:hover &__overlay { 
+        background-image: linear-gradient(to top, rgba(#000, .85) 10%, transparent);
+    }
+
+    &:hover &__description {
+        max-height: 6rem; 
+        transform: translateY(0);
+    }
+    
+    &:hover &__content { 
+        box-shadow: inset 0px 0px 0px .5rem rgba($color-red, 1);        
+    }
+}

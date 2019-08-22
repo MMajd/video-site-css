@@ -1,0 +1,28 @@
+.btn { 
+    &, 
+    &:visited, 
+    &:active { 
+        text-decoration: none; 
+        text-transform: none; 
+        border: none; 
+        background: none;
+        color: white; 
+        font-family: $font-primary;  
+        cursor: pointer;
+        padding: 1rem 2rem !important;
+        height: auto !important; 
+    }
+
+    &--default { 
+        font-weight: 500; 
+        border-radius: 5rem; 
+        background-color: $color-red; 
+        transition: all .2s;
+
+        &:hover { 
+            background-color: darken($color-red, $amount: 10%);
+        }
+    }
+
+
+}

@@ -1,0 +1,63 @@
+.slider { 
+    position: relative;
+    border-bottom: .4rem solid $color-primary;
+    
+    &__btn { 
+        display: block; 
+        background-color: $color-primary; 
+        cursor: pointer;
+
+        top: calc(50% - 5rem/2); 
+        width: 5rem; 
+        height: 4rem; 
+        
+        padding: .5rem 1rem; 
+
+        &:hover { 
+            background-color: $color-primary-dark; 
+        }
+        
+        &--next { 
+            position: absolute;
+            right: 0; 
+            
+            border-top-left-radius: 2rem; 
+            border-bottom-left-radius: 2rem; 
+        }
+        
+        &--prev { 
+            position: absolute;
+            left: 0;
+            border-top-right-radius: 2rem; 
+            border-bottom-right-radius: 2rem;
+        
+        }
+
+    }
+
+    &__icon { 
+        height: 3rem;
+        width: 3rem;
+        fill: white; 
+    }
+}
+
+
+.gallery {
+    position: relative; 
+    display: flex; 
+    align-items: center;
+    overflow: hidden;
+    
+    &__card { 
+        flex: 0 0 16.6666667%;
+
+        @media screen and (max-width: $bp-small) {
+            flex: 0 0 33.333333%; 
+        }
+
+        @media screen and (max-width: $bp-smallest) {
+            flex: 0 0 50%;
+        }
+    }
+}
