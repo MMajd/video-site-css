@@ -1,6 +1,4 @@
 # video-site-css
 
 ## preview
-
-![SiteImage] (img/img.png)
-
+![alt text](img/img.png)
