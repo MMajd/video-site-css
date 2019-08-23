@@ -51,6 +51,7 @@
     
     &__card { 
         flex: 0 0 16.6666667%;
+        border: none;  
 
         @media screen and (max-width: $bp-small) {
             flex: 0 0 33.333333%; 

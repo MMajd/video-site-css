@@ -219,7 +219,8 @@ body {
   align-items: center;
   overflow: hidden; }
   .gallery__card {
-    flex: 0 0 16.6666667%; }
+    flex: 0 0 16.6666667%;
+    border: none; }
     @media screen and (max-width: 900px) {
       .gallery__card {
         flex: 0 0 33.333333%; } }
@@ -230,6 +231,7 @@ body {
 .card {
   position: relative;
   display: block;
+  border-radius: 3px;
   min-width: 10rem;
   overflow: hidden;
   backface-visibility: hidden;
@@ -498,19 +500,19 @@ body {
   margin-right: 2rem; }
 
 .u__ml-sm {
-  margin-right: 2rem; }
+  margin-left: 2rem; }
 
 .u__mr-md {
   margin-right: 4rem; }
 
 .u__ml-md {
-  margin-right: 4rem; }
+  margin-left: 4rem; }
 
 .u__mr-lg {
   margin-right: 8rem; }
 
 .u__ml-lg {
-  margin-right: 8rem; }
+  margin-left: 8rem; }
 
 .u__no-box-shadow {
   box-shadow: none !important; }

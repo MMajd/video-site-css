@@ -1,14 +1,11 @@
 .card { 
     position: relative;
     display: block; 
-    border-radius: 1rem; 
-    overflow: hidden; 
-    
+    border-radius: 3px;     
     min-width: 10rem;
     overflow: hidden;
     backface-visibility: hidden; 
     transition: all .2s ease-in-out; 
-
 
     &__link { 
         text-align: center;
